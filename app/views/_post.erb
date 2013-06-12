@@ -1,0 +1,6 @@
+<h3><a href ="<%= @post.url%>"><%= @post.title%></a>(<%= @post.url%>)</h3>
+<%= @post.num_votes %> votes by 
+  <a href ="/user/<%= @user.id %>"> <%= @user.name%></a>
+<%= @post.comments.length %> comments
+
+
