@@ -1,0 +1,6 @@
+<a href="/user/<%= comment.user.id%>"><%= comment.user.name%></a><br>
+<a href="/post/<%=comment.post.id%>"><%= comment.post.title%></a><br>
+<%= comment.text%><br>
+<%= comment.commentvotes.sum(:vote_value) %> votes! 
+Created on <%= comment.created_at %>
+<br><br>

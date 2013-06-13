@@ -1,0 +1,5 @@
+<%= erb(:_post, { :locals => { :post => @post } }) %>
+
+<% @post.comments.each do |comment| %>
+<%= erb(:_comment, { :locals => { :comment => comment } }) %>
+<% end %> 

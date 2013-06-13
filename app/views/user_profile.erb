@@ -1,0 +1,8 @@
+<h3>Profile Page</h3>
+
+<p>user: <%=@user.name%></p>
+<p>created: <%=@user.created_at%></p>
+<p>about: <%=@user.about%></p>
+
+<a href= "/user/<%= @user.id%>/posts">See all Posts</a><br>
+<a href= "/user/<%= @user.id%>/comments">See all Comments</a>

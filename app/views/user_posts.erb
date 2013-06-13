@@ -1,0 +1,6 @@
+<h3>All your Posts!</h3>
+
+<% @user.posts.each do |post| %>
+<%= erb(:_post, { :locals => { :post => post } }) %>
+<% end %> 
+

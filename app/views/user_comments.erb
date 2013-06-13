@@ -1,0 +1,5 @@
+<h3>All Comments</h3>
+
+<% @user.comments.each do |comment| %>
+<%= erb(:_comment, { :locals => { :comment => comment } }) %>
+<% end %> 
